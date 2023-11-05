@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "learn-opengl-projects", "learn-opengl-projects\learn-opengl-projects.vcxproj", "{8CD424DD-9C23-4610-B111-1BEDF78277F3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle", "rectangle\rectangle.vcxproj", "{98B935D6-54CB-477A-8A56-5FA72A3461EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{8CD424DD-9C23-4610-B111-1BEDF78277F3}.Release|x64.Build.0 = Release|x64
 		{8CD424DD-9C23-4610-B111-1BEDF78277F3}.Release|x86.ActiveCfg = Release|Win32
 		{8CD424DD-9C23-4610-B111-1BEDF78277F3}.Release|x86.Build.0 = Release|Win32
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Debug|x64.ActiveCfg = Debug|x64
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Debug|x64.Build.0 = Debug|x64
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Debug|x86.Build.0 = Debug|Win32
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Release|x64.ActiveCfg = Release|x64
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Release|x64.Build.0 = Release|x64
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Release|x86.ActiveCfg = Release|Win32
+		{98B935D6-54CB-477A-8A56-5FA72A3461EC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
