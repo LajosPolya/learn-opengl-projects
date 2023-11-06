@@ -1,5 +1,5 @@
 /*
-    https://learnopengl.com/Getting-started/Hello-Triangle
+    https://learnopengl.com/Getting-started/Shaders
 */
 #include <glad/glad.h> 
 #include <GLFW/glfw3.h>
