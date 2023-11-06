@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triangle4", "triangle4\tria
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triangle5", "triangle5\triangle5.vcxproj", "{1B736499-227D-49C7-8971-D9ADCE30FE1E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triangle6", "triangle6\triangle6.vcxproj", "{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{1B736499-227D-49C7-8971-D9ADCE30FE1E}.Release|x64.Build.0 = Release|x64
 		{1B736499-227D-49C7-8971-D9ADCE30FE1E}.Release|x86.ActiveCfg = Release|Win32
 		{1B736499-227D-49C7-8971-D9ADCE30FE1E}.Release|x86.Build.0 = Release|Win32
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Debug|x64.ActiveCfg = Debug|x64
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Debug|x64.Build.0 = Debug|x64
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Debug|x86.ActiveCfg = Debug|Win32
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Debug|x86.Build.0 = Debug|Win32
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Release|x64.ActiveCfg = Release|x64
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Release|x64.Build.0 = Release|x64
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Release|x86.ActiveCfg = Release|Win32
+		{12C5D86B-45E6-4B5A-B9DF-6A830F7625DB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
