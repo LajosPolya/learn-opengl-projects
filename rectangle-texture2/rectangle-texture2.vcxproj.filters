@@ -13,11 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Resource Files\shaders">
-      <UniqueIdentifier>{c3907120-7706-47cc-bfbe-5ddc6cce8913}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files\textures">
-      <UniqueIdentifier>{07edf79e-a92e-4bf8-881f-8d3f15a578c4}</UniqueIdentifier>
+      <UniqueIdentifier>{36a2373f-379e-46c9-84c5-ee224bfad7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{ba360bea-b553-4ca1-9c8a-f8255a3b05ae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
