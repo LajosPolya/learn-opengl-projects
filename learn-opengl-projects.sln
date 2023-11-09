@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle-texture", "triang
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle-texture2", "rectangle-texture2\rectangle-texture2.vcxproj", "{1825A6A1-987D-4610-A805-1D54848A123E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle-two-textures", "rectangle-two-textures\rectangle-two-textures.vcxproj", "{F4E8A95B-8569-45FB-BC4E-980521901741}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{1825A6A1-987D-4610-A805-1D54848A123E}.Release|x64.Build.0 = Release|x64
 		{1825A6A1-987D-4610-A805-1D54848A123E}.Release|x86.ActiveCfg = Release|Win32
 		{1825A6A1-987D-4610-A805-1D54848A123E}.Release|x86.Build.0 = Release|Win32
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Debug|x64.ActiveCfg = Debug|x64
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Debug|x64.Build.0 = Debug|x64
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Debug|x86.ActiveCfg = Debug|Win32
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Debug|x86.Build.0 = Debug|Win32
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Release|x64.ActiveCfg = Release|x64
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Release|x64.Build.0 = Release|x64
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Release|x86.ActiveCfg = Release|Win32
+		{F4E8A95B-8569-45FB-BC4E-980521901741}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
