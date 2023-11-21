@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\dev\software\visual-studio-ref\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\dev\learn-opengl-projects\learn-opengl-projects\util\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\dev\software\visual-studio-ref\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
