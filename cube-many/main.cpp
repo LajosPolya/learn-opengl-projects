@@ -1,5 +1,5 @@
 /*
-https://learnopengl.com/Getting-started/Textures
+https://learnopengl.com/Getting-started/Coordinate-Systems
 */
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
