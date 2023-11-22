@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle-perspective", "re
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cube", "cube\cube.vcxproj", "{4C7E0ABD-83B0-44B3-955A-413EB946E64F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cube-many", "cube-many\cube-many.vcxproj", "{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{4C7E0ABD-83B0-44B3-955A-413EB946E64F}.Release|x64.Build.0 = Release|x64
 		{4C7E0ABD-83B0-44B3-955A-413EB946E64F}.Release|x86.ActiveCfg = Release|Win32
 		{4C7E0ABD-83B0-44B3-955A-413EB946E64F}.Release|x86.Build.0 = Release|Win32
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Debug|x64.ActiveCfg = Debug|x64
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Debug|x64.Build.0 = Debug|x64
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Debug|x86.Build.0 = Debug|Win32
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Release|x64.ActiveCfg = Release|x64
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Release|x64.Build.0 = Release|x64
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Release|x86.ActiveCfg = Release|Win32
+		{EC277FC7-A07A-4495-8E5A-C68BC75AD73B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
