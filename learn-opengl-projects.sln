@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "camera-user-input", "camera
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coloured-scene", "coloured-scene\coloured-scene.vcxproj", "{3ABAF623-BA1A-4D5F-B637-2AF32E29B44D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lighting-ambient", "lighting-ambient\lighting-ambient.vcxproj", "{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{3ABAF623-BA1A-4D5F-B637-2AF32E29B44D}.Release|x64.Build.0 = Release|x64
 		{3ABAF623-BA1A-4D5F-B637-2AF32E29B44D}.Release|x86.ActiveCfg = Release|Win32
 		{3ABAF623-BA1A-4D5F-B637-2AF32E29B44D}.Release|x86.Build.0 = Release|Win32
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Debug|x64.ActiveCfg = Debug|x64
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Debug|x64.Build.0 = Debug|x64
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Debug|x86.ActiveCfg = Debug|Win32
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Debug|x86.Build.0 = Debug|Win32
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Release|x64.ActiveCfg = Release|x64
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Release|x64.Build.0 = Release|x64
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Release|x86.ActiveCfg = Release|Win32
+		{277249DC-8E9C-49E0-9B8E-F8DD5DD0BF6D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
