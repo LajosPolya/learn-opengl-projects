@@ -188,7 +188,7 @@ int main()
 
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-        model = glm::scale(model, glm::vec3(1.1f, 1.1f, 1.1f));
+        model = glm::scale(model, glm::vec3(2.0f, 3.5f, 1.2f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
         unsigned int objectColorLoc = glGetUniformLocation(ourShader.ID, "objectColor");
@@ -203,6 +203,7 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         glUseProgram(lightShader.ID);
+        model = glm::mat4(1.0f);
         model = glm::translate(model, lightPos);
         model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
         modelLoc = glGetUniformLocation(lightShader.ID, "model");
