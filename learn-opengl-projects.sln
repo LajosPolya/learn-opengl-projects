@@ -59,7 +59,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lighting-diffuse", "lightin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lighting-diffuse-scaled-normal-vector", "lighting-diffuse-scaled-normal-vector\lighting-diffuse-scaled-normal-vector.vcxproj", "{08C722A5-14C0-45C5-88B8-B0E72DCC137C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lighting-specular", "lighting-specular\lighting-specular.vcxproj", "{017221A1-D693-4AE1-B56B-07FC371BD18D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lighting-specular-(phong)", "lighting-specular\lighting-specular.vcxproj", "{017221A1-D693-4AE1-B56B-07FC371BD18D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-specular-(phong)-rotating", "light-specular-(phong)-rotating\light-specular-(phong)-rotating.vcxproj", "{CF49F079-1337-4752-81A1-8269D01CFC1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -301,6 +303,14 @@ Global
 		{017221A1-D693-4AE1-B56B-07FC371BD18D}.Release|x64.Build.0 = Release|x64
 		{017221A1-D693-4AE1-B56B-07FC371BD18D}.Release|x86.ActiveCfg = Release|Win32
 		{017221A1-D693-4AE1-B56B-07FC371BD18D}.Release|x86.Build.0 = Release|Win32
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Debug|x64.ActiveCfg = Debug|x64
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Debug|x64.Build.0 = Debug|x64
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Debug|x86.Build.0 = Debug|Win32
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Release|x64.ActiveCfg = Release|x64
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Release|x64.Build.0 = Release|x64
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Release|x86.ActiveCfg = Release|Win32
+		{CF49F079-1337-4752-81A1-8269D01CFC1D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
