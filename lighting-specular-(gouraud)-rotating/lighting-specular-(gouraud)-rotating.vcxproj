@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cf49f079-1337-4752-81a1-8269d01cfc1d}</ProjectGuid>
-    <RootNamespace>lightspecularphongrotating</RootNamespace>
+    <ProjectGuid>{39a05b0d-3589-4b22-a6cd-cedc192e937a}</ProjectGuid>
+    <RootNamespace>lightingspeculargouraudrotating</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>lighting-specular-(phong)-rotating</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
