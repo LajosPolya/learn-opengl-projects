@@ -204,8 +204,9 @@ int main()
         unsigned int lightAmbientLoc = glGetUniformLocation(ourShader.ID, "light.ambient");
         glUniform3fv(lightAmbientLoc, 1, glm::value_ptr(glm::vec3(0.1f)));
 
+        glm::vec3 ambientLight(1.0f, 0.3f, 0.5f);
         unsigned int lightDiffuseLoc = glGetUniformLocation(ourShader.ID, "light.diffuse");
-        glUniform3fv(lightDiffuseLoc, 1, glm::value_ptr(glm::vec3(1.0f, 0.3f, 0.5f)));
+        glUniform3fv(lightDiffuseLoc, 1, glm::value_ptr(ambientLight));
 
         unsigned int lightSpecularLoc = glGetUniformLocation(ourShader.ID, "light.specular");
         glUniform3fv(lightSpecularLoc, 1, glm::value_ptr(glm::vec3(0.5f, 0.3f, 1.0f)));
@@ -399,6 +400,8 @@ int main()
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
         projectionLoc = glGetUniformLocation(lightShader.ID, "projection");
         glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+        unsigned int lightBoxColorLoc = glGetUniformLocation(lightShader.ID, "lightColor");
+        glUniform3fv(lightBoxColorLoc, 1, glm::value_ptr(ambientLight));
         glBindVertexArray(lightVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
