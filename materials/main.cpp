@@ -195,10 +195,22 @@ int main()
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
+        // Light
+        unsigned int lightColorLoc = glGetUniformLocation(ourShader.ID, "lightColor");
+        glUniform3fv(lightColorLoc, 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.5f)));
+
+        unsigned int lightPositionLoc = glGetUniformLocation(ourShader.ID, "lightPos");
+        glUniform3fv(lightPositionLoc, 1, glm::value_ptr(newLightPos));
+
+        // View
+        unsigned int viewPosLoc = glGetUniformLocation(ourShader.ID, "viewPos");
+        glUniform3fv(viewPosLoc, 1, glm::value_ptr(camera.Position));
+
         // Tutorial material
         setMaterialColors(ourShader.ID, glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(0.5f, 0.5f, 0.5f), 32.0f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
+        /* http://devernay.free.fr/cours/opengl/materials.html */
         // Emerald
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
@@ -366,21 +378,6 @@ int main()
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         setMaterialColors(ourShader.ID, glm::vec3(0.05, 0.05, 0.0), glm::vec3(0.5, 0.5, 0.4), glm::vec3(0.7, 0.7, 0.04), 0.078125);
         glDrawArrays(GL_TRIANGLES, 0, 36);
-
-
-        // Light
-        unsigned int lightColorLoc = glGetUniformLocation(ourShader.ID, "lightColor");
-        glUniform3fv(lightColorLoc, 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.5f)));
-
-        unsigned int lightPositionLoc = glGetUniformLocation(ourShader.ID, "lightPos");
-        glUniform3fv(lightPositionLoc, 1, glm::value_ptr(newLightPos));
-
-        unsigned int viewPosLoc = glGetUniformLocation(ourShader.ID, "viewPos");
-        glUniform3fv(viewPosLoc, 1, glm::value_ptr(camera.Position));
-
-        glDrawArrays(GL_TRIANGLES, 0, 36);
-
-        /* http://devernay.free.fr/cours/opengl/materials.html */
 
 
         glUseProgram(lightShader.ID);
