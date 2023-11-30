@@ -215,168 +215,168 @@ int main()
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0215f, 0.1745f, 0.0215f), glm::vec3(0.07568, 0.61424, 0.07568), glm::vec3(0.633, 0.727811, 0.633), 0.6);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0215f, 0.1745f, 0.0215f), glm::vec3(0.07568f, 0.61424f, 0.07568f), glm::vec3(0.633f, 0.727811f, 0.633f), 0.6f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Jade
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(4.0f, 0.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.135, 0.1575, 0.0215f), glm::vec3(0.54, 0.89, 0.63), glm::vec3(0.316228, 0.316228, 0.316228), 0.1);
+        setMaterialColors(ourShader.ID, glm::vec3(0.135f, 0.1575f, 0.0215f), glm::vec3(0.54f, 0.89f, 0.63f), glm::vec3(0.316228f, 0.316228f, 0.316228f), 0.1f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Obsidian
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(6.0f, 0.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.05375, 0.05, 0.06625), glm::vec3(0.18275, 0.17, 0.22525), glm::vec3(0.332741, 0.328634, 0.346435), 0.3);
+        setMaterialColors(ourShader.ID, glm::vec3(0.05375f, 0.05f, 0.06625f), glm::vec3(0.18275f, 0.17f, 0.22525f), glm::vec3(0.332741f, 0.328634f, 0.346435f), 0.3f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Pearl
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(8.0f, 0.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.25, 0.20725, 0.20725), glm::vec3(1.0, 0.829, 0.829), glm::vec3(0.296648, 0.296648, 0.296648), 0.088);
+        setMaterialColors(ourShader.ID, glm::vec3(0.25f, 0.20725f, 0.20725f), glm::vec3(1.0f, 0.829f, 0.829f), glm::vec3(0.296648f, 0.296648f, 0.296648f), 0.088f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Ruby
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.1745, 0.01175, 0.01175), glm::vec3(0.61424, 0.04136, 0.04136), glm::vec3(0.727811, 0.626959, 0.626959), 0.6);
+        setMaterialColors(ourShader.ID, glm::vec3(0.1745f, 0.01175f, 0.01175f), glm::vec3(0.61424f, 0.04136f, 0.04136f), glm::vec3(0.727811f, 0.626959f, 0.626959f), 0.6f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Turquoise
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, -2.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.1, 0.18725, 0.1745), glm::vec3(0.396, 0.74151, 0.69102), glm::vec3(0.297254, 0.30829, 0.306678), 0.1);
+        setMaterialColors(ourShader.ID, glm::vec3(0.1f, 0.18725f, 0.1745f), glm::vec3(0.396f, 0.74151f, 0.69102f), glm::vec3(0.297254f, 0.30829f, 0.306678f), 0.1f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Brass
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(4.0f, -2.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.329412, 0.223529, 0.027451), glm::vec3(0.780392, 0.568627, 0.113725), glm::vec3(0.992157, 0.941176, 0.807843), 0.21794872);
+        setMaterialColors(ourShader.ID, glm::vec3(0.329412f, 0.223529f, 0.027451f), glm::vec3(0.780392f, 0.568627f, 0.113725f), glm::vec3(0.992157f, 0.941176f, 0.807843f), 0.21794872f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Bronze
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(6.0f, -2.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.2125, 0.1275, 0.054), glm::vec3(0.714, 0.4284, 0.18144), glm::vec3(0.393548, 0.271906, 0.166721), 0.2);
+        setMaterialColors(ourShader.ID, glm::vec3(0.2125f, 0.1275f, 0.054f), glm::vec3(0.714f, 0.4284f, 0.18144f), glm::vec3(0.393548f, 0.271906f, 0.166721f), 0.2f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Chrome
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(8.0f, -2.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.25, 0.25, 0.25), glm::vec3(0.4, 0.4, 0.4), glm::vec3(0.774597, 0.774597, 0.774597), 0.6);
+        setMaterialColors(ourShader.ID, glm::vec3(0.25f, 0.25f, 0.25f), glm::vec3(0.4f, 0.4f, 0.4f), glm::vec3(0.774597f, 0.774597f, 0.774597f), 0.6f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Copper
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -4.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.19125, 0.0735, 0.0225), glm::vec3(0.7038, 0.27048, 0.0828), glm::vec3(0.256777, 0.137622, 0.086014), 0.1);
+        setMaterialColors(ourShader.ID, glm::vec3(0.19125f, 0.0735f, 0.0225f), glm::vec3(0.7038f, 0.27048f, 0.0828f), glm::vec3(0.256777f, 0.137622f, 0.086014f), 0.1f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Gold
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, -4.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.24725, 0.1995, 0.0745), glm::vec3(0.75164, 0.60648, 0.22648), glm::vec3(0.628281, 0.555802, 0.366065), 0.4);
+        setMaterialColors(ourShader.ID, glm::vec3(0.24725f, 0.1995f, 0.0745f), glm::vec3(0.75164f, 0.60648f, 0.22648f), glm::vec3(0.628281f, 0.555802f, 0.366065f), 0.4f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Silver
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(4.0f, -4.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.19225, 0.19225, 0.19225), glm::vec3(0.50754, 0.50754, 0.50754), glm::vec3(0.508273, 0.508273, 0.508273), 0.4);
+        setMaterialColors(ourShader.ID, glm::vec3(0.19225f, 0.19225f, 0.19225f), glm::vec3(0.50754f, 0.50754f, 0.50754f), glm::vec3(0.508273f, 0.508273f, 0.508273f), 0.4f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Black Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(6.0f, -4.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.01, 0.01, 0.01), glm::vec3(0.50, 0.50, 0.50), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.01f, 0.01f, 0.01f), glm::vec3(0.50f, 0.50f, 0.50f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Cyan Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(8.0f, -4.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.1, 0.06), glm::vec3(0.0, 0.50980392, 0.50980392), glm::vec3(0.50980392, 0.50980392, 0.50980392), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.1f, 0.06f), glm::vec3(0.0f, 0.50980392f, 0.50980392f), glm::vec3(0.50980392f, 0.50980392f, 0.50980392f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Green Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -6.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1, 0.35, 0.1), glm::vec3(0.45, 0.55, 0.45), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.1f, 0.35f, 0.1f), glm::vec3(0.45f, 0.55f, 0.45f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Red Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, -6.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.5, 0.0, 0.0), glm::vec3(0.7, 0.6, 0.6), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.0f, 0.0f), glm::vec3(0.7f, 0.6f, 0.6f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // White Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(4.0f, -6.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.55, 0.55, 0.55), glm::vec3(0.70, 0.70, 0.70), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.55f, 0.55f, 0.55f), glm::vec3(0.70f, 0.70f, 0.70f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Yellow Plastic
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(6.0f, -6.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.5, 0.5, 0.0), glm::vec3(0.60, 0.60, 0.60), 0.25);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f, 0.5f, 0.0f), glm::vec3(0.60f, 0.60f, 0.60f), 0.25f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Black Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(8.0f, -6.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.02, 0.02, 0.02), glm::vec3(0.01, 0.01, 0.01), glm::vec3(0.4, 0.4, 0.4), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.02f, 0.02f, 0.02f), glm::vec3(0.01f, 0.01f, 0.01f), glm::vec3(0.4f, 0.4f, 0.4f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Cyan Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -8.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.05, 0.05), glm::vec3(0.4, 0.5, 0.5), glm::vec3(0.04, 0.7, 0.7), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.05f, 0.05f), glm::vec3(0.4f, 0.5f, 0.5f), glm::vec3(0.04f, 0.7f, 0.7f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Green Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(2.0f, -8.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.0, 0.05, 0.0), glm::vec3(0.4, 0.5, 0.5), glm::vec3(0.04, 0.7, 0.04), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.0f, 0.05f, 0.0f), glm::vec3(0.4f, 0.5f, 0.5f), glm::vec3(0.04f, 0.7f, 0.04f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Red Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(4.0f, -8.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.05, 0.0, 0.0), glm::vec3(0.5, 0.4, 0.4), glm::vec3(0.7, 0.7, 0.04), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.05f, 0.0f, 0.0f), glm::vec3(0.5f, 0.4f, 0.4f), glm::vec3(0.7f, 0.7f, 0.04f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // White Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(6.0f, -8.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.05, 0.05, 0.05), glm::vec3(0.5, 0.5, 0.5), glm::vec3(0.7, 0.7, 0.7), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.05f, 0.05f, 0.05f), glm::vec3(0.5f, 0.5f, 0.5f), glm::vec3(0.7f, 0.7f, 0.7f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // Yellow Rubber
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(8.0f, -8.0f, 0.0f));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        setMaterialColors(ourShader.ID, glm::vec3(0.05, 0.05, 0.0), glm::vec3(0.5, 0.5, 0.4), glm::vec3(0.7, 0.7, 0.04), 0.078125);
+        setMaterialColors(ourShader.ID, glm::vec3(0.05f, 0.05f, 0.0f), glm::vec3(0.5f, 0.5f, 0.4f), glm::vec3(0.7f, 0.7f, 0.04f), 0.078125f);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
