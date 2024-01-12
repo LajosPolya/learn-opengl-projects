@@ -17,6 +17,7 @@ https://learnopengl.com/Lighting/Lighting-maps
 #include <iostream>
 
 unsigned int generateTexture(std::string filename);
+void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat4 projection, glm::vec3 diffuseLight, glm::vec3 lightPos);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -243,21 +244,7 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
-        // Draw Light
-        glUseProgram(lightShader.ID);
-        model = glm::mat4(1.0f);
-        model = glm::translate(model, newLightPos);
-        model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
-        modelLoc = glGetUniformLocation(lightShader.ID, "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        viewLoc = glGetUniformLocation(lightShader.ID, "view");
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        projectionLoc = glGetUniformLocation(lightShader.ID, "projection");
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-        unsigned int lightBoxColorLoc = glGetUniformLocation(lightShader.ID, "lightColor");
-        glUniform3fv(lightBoxColorLoc, 1, glm::value_ptr(diffuseLight));
-        glBindVertexArray(lightVAO);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        drawLight(lightShader.ID, lightVAO, view, projection, diffuseLight, newLightPos);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -274,6 +261,23 @@ int main()
     // ------------------------------------------------------------------
     glfwTerminate();
     return 0;
+}
+
+void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat4 projection, glm::vec3 diffuseLight, glm::vec3 lightPos) {
+    glUseProgram(shaderId);
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, lightPos);
+    model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
+    unsigned int modelLoc = glGetUniformLocation(shaderId, "model");
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+    unsigned int viewLoc = glGetUniformLocation(shaderId, "view");
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+    unsigned int projectionLoc = glGetUniformLocation(shaderId, "projection");
+    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    unsigned int lightBoxColorLoc = glGetUniformLocation(shaderId, "lightColor");
+    glUniform3fv(lightBoxColorLoc, 1, glm::value_ptr(diffuseLight));
+    glBindVertexArray(VAO);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
 unsigned int generateTexture(std::string filename) {

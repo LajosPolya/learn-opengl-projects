@@ -16,6 +16,8 @@ https://learnopengl.com/Lighting/Basic-Lighting
 
 #include <iostream>
 
+void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat4 projection, glm::vec3 lightPos);
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -207,18 +209,7 @@ int main()
 
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
-        glUseProgram(lightShader.ID);
-        model = glm::mat4(1.0f);
-        model = glm::translate(model, newLightPos);
-        model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
-        modelLoc = glGetUniformLocation(lightShader.ID, "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        viewLoc = glGetUniformLocation(lightShader.ID, "view");
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        projectionLoc = glGetUniformLocation(lightShader.ID, "projection");
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-        glBindVertexArray(lightVAO);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        drawLight(lightShader.ID, lightVAO, view, projection, newLightPos);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -235,6 +226,22 @@ int main()
     // ------------------------------------------------------------------
     glfwTerminate();
     return 0;
+}
+
+void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat4 projection, glm::vec3 lightPos) {
+    glUseProgram(shaderId);
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, lightPos);
+    model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
+    unsigned int modelLoc = glGetUniformLocation(shaderId, "model");
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+    unsigned int viewLoc = glGetUniformLocation(shaderId, "view");
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+    unsigned int projectionLoc = glGetUniformLocation(shaderId, "projection");
+    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    glBindVertexArray(VAO);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+
 }
 
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
