@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-texture-maps-(emissio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-caster-directional", "light-caster-directional\light-caster-directional.vcxproj", "{25A9271C-2682-46EE-8285-3C9C0288A08B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-caster-point", "light-caster-point\light-caster-point.vcxproj", "{EF0B707A-B149-4272-AD13-57DD52AA0A0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -391,6 +393,14 @@ Global
 		{25A9271C-2682-46EE-8285-3C9C0288A08B}.Release|x64.Build.0 = Release|x64
 		{25A9271C-2682-46EE-8285-3C9C0288A08B}.Release|x86.ActiveCfg = Release|Win32
 		{25A9271C-2682-46EE-8285-3C9C0288A08B}.Release|x86.Build.0 = Release|Win32
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Debug|x64.ActiveCfg = Debug|x64
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Debug|x64.Build.0 = Debug|x64
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Debug|x86.ActiveCfg = Debug|Win32
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Debug|x86.Build.0 = Debug|Win32
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x64.ActiveCfg = Release|x64
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x64.Build.0 = Release|x64
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x86.ActiveCfg = Release|Win32
+		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
