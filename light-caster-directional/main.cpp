@@ -210,8 +210,8 @@ int main()
         unsigned int lightSpecularLoc = glGetUniformLocation(ourShader.ID, "light.specular");
         glUniform3fv(lightSpecularLoc, 1, glm::value_ptr(glm::vec3(1.0f)));
 
-        unsigned int lightPositionLoc = glGetUniformLocation(ourShader.ID, "light.direction");
-        glUniform3fv(lightPositionLoc, 1, glm::value_ptr(lightPos));
+        unsigned int lightDirectionLoc = glGetUniformLocation(ourShader.ID, "light.direction");
+        glUniform3fv(lightDirectionLoc, 1, glm::value_ptr(lightPos));
 
         unsigned int shininessLoc = glGetUniformLocation(ourShader.ID, "material.shininess");
         glUniform1f(shininessLoc, 2.0f);
