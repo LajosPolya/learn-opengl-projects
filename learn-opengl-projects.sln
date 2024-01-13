@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-caster-directional", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-caster-point", "light-caster-point\light-caster-point.vcxproj", "{EF0B707A-B149-4272-AD13-57DD52AA0A0E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-caster-spotlight-(flashlight)", "light-caster-spotlight-(flashlight)\light-caster-spotlight-(flashlight).vcxproj", "{0292B892-51EA-416D-9AA8-5B1ED85A5C98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +403,14 @@ Global
 		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x64.Build.0 = Release|x64
 		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x86.ActiveCfg = Release|Win32
 		{EF0B707A-B149-4272-AD13-57DD52AA0A0E}.Release|x86.Build.0 = Release|Win32
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Debug|x64.ActiveCfg = Debug|x64
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Debug|x64.Build.0 = Debug|x64
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Debug|x86.ActiveCfg = Debug|Win32
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Debug|x86.Build.0 = Debug|Win32
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Release|x64.ActiveCfg = Release|x64
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Release|x64.Build.0 = Release|x64
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Release|x86.ActiveCfg = Release|Win32
+		{0292B892-51EA-416D-9AA8-5B1ED85A5C98}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
