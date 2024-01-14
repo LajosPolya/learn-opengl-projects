@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="include\texture.h" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
