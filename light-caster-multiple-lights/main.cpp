@@ -22,6 +22,7 @@ void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat
 
 void relayDirectionLightParams(unsigned int shaderId);
 void relayPointLightParams(unsigned int shaderId, unsigned int i, glm::vec3 lightPos, glm::vec3 diffuseLight);
+void relaySpotlightParams(unsigned int shaderId);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -229,6 +230,8 @@ int main()
             relayPointLightParams(ourShader.ID, i, pointLightPositions[i], diffuseLight);
         }
 
+        relaySpotlightParams(ourShader.ID);
+
         // material shininess
         unsigned int shininessLoc = glGetUniformLocation(ourShader.ID, "material.shininess");
         glUniform1f(shininessLoc, 2.0f);
@@ -275,6 +278,41 @@ int main()
     // ------------------------------------------------------------------
     glfwTerminate();
     return 0;
+}
+
+void relaySpotlightParams(unsigned int shaderId) {
+    unsigned int lightAmbientLoc = glGetUniformLocation(shaderId, "spotlight.ambient");
+    glUniform3fv(lightAmbientLoc, 1, glm::value_ptr(glm::vec3(0.1f)));
+
+    glm::vec3 diffuseLight(2.f);
+    unsigned int lightDiffuseLoc = glGetUniformLocation(shaderId, "spotlight.diffuse");
+    glUniform3fv(lightDiffuseLoc, 1, glm::value_ptr(diffuseLight));
+
+    unsigned int lightSpecularLoc = glGetUniformLocation(shaderId, "spotlight.specular");
+    glUniform3fv(lightSpecularLoc, 1, glm::value_ptr(glm::vec3(1.0f)));
+
+    unsigned int lightDirectionLoc = glGetUniformLocation(shaderId, "spotlight.direction");
+    glUniform3fv(lightDirectionLoc, 1, glm::value_ptr(camera.Front));
+
+    unsigned int lightPositionLoc = glGetUniformLocation(shaderId, "spotlight.position");
+    glUniform3fv(lightPositionLoc, 1, glm::value_ptr(camera.Position));
+
+    unsigned int lightCutOffLoc = glGetUniformLocation(shaderId, "spotlight.cutOff");
+    glUniform1f(lightCutOffLoc, glm::cos(glm::radians(1.5)));
+
+    unsigned int lightOuterCutOffLoc = glGetUniformLocation(shaderId, "spotlight.outerCutOff");
+    glUniform1f(lightOuterCutOffLoc, glm::cos(glm::radians(15.0)));
+
+    // attenuation levels
+    // https://wiki.ogre3d.org/tiki-index.php?page=-Point+Light+Attenuation
+    unsigned int lightConstantLoc = glGetUniformLocation(shaderId, "spotlight.constant");
+    glUniform1f(lightConstantLoc, 1.0f);
+
+    unsigned int lightLinearLoc = glGetUniformLocation(shaderId, "spotlight.linear");
+    glUniform1f(lightLinearLoc, 0.09f);
+
+    unsigned int lightQuadraticLoc = glGetUniformLocation(shaderId, "spotlight.quadratic");
+    glUniform1f(lightQuadraticLoc, 0.032f);
 }
 
 void relayPointLightParams(unsigned int shaderId, unsigned int i, glm::vec3 lightPos, glm::vec3 diffuseLight) {
