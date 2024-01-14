@@ -26,9 +26,6 @@ void relayPointLightParams(unsigned int shaderId, unsigned int i, glm::vec3 ligh
 void relaySpotlightParams(unsigned int shaderId);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void processInput(GLFWwindow* window);
-void mouse_callback(GLFWwindow* window, double xpos, double ypos);
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
 // settings
 const unsigned int SCR_WIDTH = 800;
