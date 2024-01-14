@@ -225,7 +225,7 @@ int main()
 
         relayDirectionLightParams(ourShader.ID);
 
-        glm::vec3 diffuseLight(2.f);
+        glm::vec3 diffuseLight(.8f);
         for (unsigned int i = 0; i < (sizeof(pointLightPositions) / sizeof(*pointLightPositions)); i++) {
             relayPointLightParams(ourShader.ID, i, pointLightPositions[i], diffuseLight);
         }
@@ -343,7 +343,7 @@ void relayDirectionLightParams(unsigned int shaderId) {
     unsigned int lightAmbientLoc = glGetUniformLocation(shaderId, "dirLight.ambient");
     glUniform3fv(lightAmbientLoc, 1, glm::value_ptr(glm::vec3(0.1f)));
 
-    glm::vec3 diffuseLight(0.5f);
+    glm::vec3 diffuseLight(0.3f);
     unsigned int lightDiffuseLoc = glGetUniformLocation(shaderId, "dirLight.diffuse");
     glUniform3fv(lightDiffuseLoc, 1, glm::value_ptr(diffuseLight));
 
