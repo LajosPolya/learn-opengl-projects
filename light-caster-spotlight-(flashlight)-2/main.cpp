@@ -18,7 +18,6 @@ https://wiki.ogre3d.org/tiki-index.php?page=-Point+Light+Attenuation
 #include <iostream>
 
 unsigned int generateTexture(std::string filename);
-void drawLight(unsigned int shaderId, unsigned int VAO, glm::mat4 view, glm::mat4 projection, glm::vec3 diffuseLight);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
